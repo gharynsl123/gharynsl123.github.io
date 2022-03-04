@@ -11,6 +11,7 @@ function panggilCSS(req,res) {
         res.end();
     }
 }
+
 const server = http.createServer((req, res) => {
     let dataResponse,
         url
@@ -18,6 +19,7 @@ const server = http.createServer((req, res) => {
     res.setHeader("Content-Type", "text/html")
 
     panggilCSS(req, res);
+    
     url = req.url;
     console.log(url)
 
