@@ -1,5 +1,8 @@
+require('dotenv').config();
+
 const username = "gharynsl123"; // Ganti dengan nama pengguna GitHub Anda
-const token = "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"; // Ganti dengan Personal Access Token GitHub Anda
+// kita akan menggunakan token untuk mengakses API GitHub
+const token = process.env.GITHUB_TOKEN;
 
 fetch(`https://api.github.com/users/${username}`, {
   headers: {
