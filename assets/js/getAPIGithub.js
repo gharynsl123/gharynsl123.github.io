@@ -1,7 +1,6 @@
-const username = "gharynsl123"; // Ganti dengan nama pengguna GitHub Anda
-const token = "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"; // Ganti dengan Personal Access Token GitHub Anda
+const token = "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"; // Ganti dengan Personal Access Token GitHub Anda
 
-fetch(`https://api.github.com/users/${username}`, {
+fetch(`https://api.github.com/users/gharynsl123`, {
   headers: {
     Authorization: `Bearer ${token}`,
   },
